@@ -27,6 +27,8 @@
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
+  --transition: all 200ms ease;
 }
 
 @media (min-width: 800px) {
@@ -83,7 +85,7 @@ strong {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
+  transition: var(--transition);
 }
 
 .btn:hover {
@@ -184,6 +186,7 @@ h3 {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
   text-decoration: none;
+  transition: var(--transition);
 }
 
 .nav__link:hover {
@@ -202,13 +205,11 @@ h3 {
 }
 
 .nav__item.resume-btn {
-  padding: 0.5em;
+  border: 2px solid var(--clr-accent);
+  padding: 0.5em 1em;
   background-color: transparent;
-}
-
-.nav__item.resume-btn .nav__link {
-  font-family: var(--ff-primary);
-  font-weight: var(--fw-bold);
+  transition: var(--transition);
+  cursor: pointer;
 }
 
 .nav__item.resume-btn:hover {
@@ -216,7 +217,9 @@ h3 {
   color: var(--clr-light);
 }
 
-.nav__item.resume-btn .nav__link:hover {
+.nav__item.resume-btn .nav__link {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
   color: var(--clr-light);
 }
 
@@ -308,6 +311,14 @@ h3 {
     color: var(--clr-accent);
   }
 
+  .nav__item.resume-btn .nav__link {
+    color: var(--clr-dark);
+  }
+
+  .nav__item.resume-btn:hover > * {
+    color: var(--clr-light);
+  }
+
   .nav-toggle {
     display: none;
   }
@@ -334,7 +345,7 @@ h3 {
     margin: auto;
     grid-column-gap: 1em;
     grid-template-areas:
-      'img title'
+      'img title '
       'img subtitle';
     grid-template-columns: min-content max-content;
   }
@@ -360,6 +371,14 @@ h3 {
 /* About me section */
 
 .about-me {
+  background-color: var(--clr-dark);
+  background-image: url(/images/skills-bg.jpeg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.about-me__contents {
+  color: var(--clr-light);
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -369,7 +388,7 @@ h3 {
 }
 
 @media (min-width: 600px) {
-  .about-me {
+  .about-me__contents {
     display: grid;
     grid-template-columns: 1fr 250px;
     grid-template-areas:
@@ -403,11 +422,9 @@ h3 {
 /* My work section */
 
 .my-work {
-  background-color: var(--clr-dark);
-  background-image: url(/images/skills-bg.jpeg);
   background-blend-mode: multiply;
   background-size: cover;
-  color: var(--clr-light);
+
   text-align: center;
 }
 
