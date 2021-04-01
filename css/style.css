@@ -111,6 +111,10 @@ h3 {
   font-size: var(--fs-h3);
 }
 
+li {
+  list-style: none;
+}
+
 .section__title {
   margin-bottom: 0.25em;
 }
@@ -480,24 +484,32 @@ h3 {
 }
 
 .skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   margin-bottom: 4em;
+  padding: 0;
 }
 
 .skill {
+  width: 150px;
+  font-size: var(--fs-h1);
   max-width: 500px;
   margin: auto;
+}
+
+.skill h3 {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
 }
 
 @media (min-width: 800px) {
   .skills {
     display: flex;
+    justify-content: space-between;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .skill + .skill {
-    margin-left: 2em;
   }
 }
 
