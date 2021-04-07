@@ -151,13 +151,13 @@ li {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 1em 3em;
+  padding: 1em 2em;
 
   margin: auto;
 }
 
 .logo {
-  max-width: 50px;
+  max-width: 60px;
 }
 
 .nav {
@@ -441,7 +441,7 @@ li {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   overflow: hidden;
 }
 
