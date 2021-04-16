@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/ico" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <title>Hyunji Kim | Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="logo" width="100px">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        <button class="nav__item resume-btn">
+          <a href="#resume" class="nav__link">Resume</a>
+        </button>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Hyunji</strong>
+    </h1>
+    <h2 class="section__subtitle section__subtitle--intro">a self-taught front-end developer & designer</h2>
+
+  </section>
+
+  <!-- About Me -->
+
+  <section class="about-me" id="about">
+    <div class="about-me__contents">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">Designer & Developer based in Toronto</p>
+
+      <div class="about-me__body">
+        <p>Hi, I'm Hyunji.
+        </p>
+        <p>I'm a designer and web developer based in Toronto. I create user-friendly and interactive web applications
+          with aesthetically pleasing design. <br>As a highly motivated person who can adapt and learn quickly, I am
+          always willing to challenge myself to be a higher level professional.
+        </p>
+        <p></p>
+      </div>
+
+      <img src="/images/IMG_9180.jpg" alt="Hyunji Kim standing in front of a Japanese temple" class="about-me__img">
+    </div>
+  </section>
+
+  <!-- My Work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My work</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+    <div class="portfolio">
+      <!-- Portfolio item 01 -->
+      <a href="#" class="portfolio__item">
+        <img src="/images/projects/mywork-img-01.jpg" alt="first project" class="portfolio__img">
+        <button class="btn"></button>
+      </a>
+
+      <!-- Portfolio item 02 -->
+      <a href="#" class="portfolio__item">
+        <img src="/images/projects/mywork-img-02.jpg" alt="second project" class="portfolio__img">
+      </a>
+
+      <!-- Portfolio item 03 -->
+      <a href="#" class="portfolio__item">
+        <img src="/images/projects/project2.png" alt="third project" class="portfolio__img">
+      </a>
+
+
+
+    </div>
+  </section>
+
+
+
+  <!-- My skills -->
+  <section class="my-skills" id="skills">
+    <h2 class="section__title section__title--skills">Skills</h2>
+    <ul class="skills">
+      <li class="skill">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-wordpress-simple"></i>
+        <h3>WordPress</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+      </li>
+    </ul> <!-- / skills -->
+
+    <a href="#work" class="btn">My Work</a>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:creative.hkim@gmail.com" class="footer-link">creative.hkim@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a href="https://github.com/creativehkim" class="social-list__link">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://www.linkedin.com/in/creativehkim/" class="social-list__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a href="https://twitter.com/creativehkim" class="social-list__link"><i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    </ul>
+
+  </footer>
+  <div class="attribution">
+    Built and Designed by Hyunji Kim 2021
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
