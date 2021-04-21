@@ -3,162 +3,266 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/ico" href="images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <title>Hyunji's Portfolio</title>
+  <meta name="description" content="Portfolio for a awesome front-end developer Hyunji">
+  <meta name="author" content="Hyunji Kim">
+  <link rel="icon" type="image/ico" href="imgs/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-
-  <title>Hyunji Kim | Frontend Developer</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="logo">
-      <img src="/images/logo.svg" alt="logo" width="100px">
+  <!-- Navbar -->
+  <nav id="navbar" class="section">
+    <div class="navbar__logo">
+      <img src="/imgs/logo.svg" alt="logo" class="logo">
     </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-        <button class="nav__item resume-btn">
-          <a href="#resume" class="nav__link">Resume</a>
-        </button>
+    <div class="navbar__menu-container">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">Work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
-    </nav>
+    </div>
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
 
-  </header>
-
-  <!-- Introduction -->
-  <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hi, I am <strong>Hyunji</strong>
-    </h1>
-    <h2 class="section__subtitle section__subtitle--intro">a self-taught front-end developer & designer</h2>
-
+  <!-- Home -->
+  <section id="home" class="section">
+    <div class="home__container">
+      <h1 class="home__title">Hello,<br /> I am Hyunji</h1>
+      <h2 class="home__description">The Front-end Developer you are looking for</h2>
+      <button class="home__contact" data-link="#contact">Contact Me</button>
+    </div>
+    <button class="home__arrow" data-link="#home"><i class="fas fa-angle-up" data-link="#home"></i></button>
   </section>
 
-  <!-- About Me -->
-
-  <section class="about-me" id="about">
-    <div class="about-me__contents">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Designer & Developer based in Toronto</p>
-
-      <div class="about-me__body">
-        <p>Hi, I'm Hyunji.
-        </p>
-        <p>I'm a designer and web developer based in Toronto. I create user-friendly and interactive web applications
-          with aesthetically pleasing design. <br>As a highly motivated person who can adapt and learn quickly, I am
-          always willing to challenge myself to be a higher level professional.
-        </p>
-        <p></p>
+  <!-- About -->
+  <section id="about" class="section section__container">
+    <h1>About me</h1>
+    <img src="imgs/profile.jpg" alt="Hyunji's profile photo" class="about__avatar">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in perferendis ab nesciunt quam. Numquam
+      officiis inventore dolores cupiditate facere ratione facilis obcaecati vitae veritatis, sunt, distinctio aut non
+      debitis!
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">HTML, CSS, JavaScript</div>
       </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-figma"></i>
+        </div>
+        <h2 class="major__title">Web Design</h2>
+        <div class="major__description">Responsive Web Dsign using Figma, Sketch and XD</div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-wordpress"></i>
+        </div>
+        <h2 class="major__title">WordPress</h2>
+        <div class="major__description">Designing and managing WordPress based website</div>
+      </div>
+    </div>
+    <!-- <div class="about__schools">
+      <div class="school">
+        <img src="imgs/school/mohawk_logo.png" alt="Mohawk College" class="school__logo">
+        <div class="school__description">
+          <p class="school__name">Mohawk College</p>
+          <p class="school__period">Sep 2017-Jun 2020</p>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section__container"></div>
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis quae facere incidunt veniam quisquam
+      perspiciatis eveniet corrupti recusandae maxime ad eius, sint iure voluptatibus id tempora quam saepe. Itaque.
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>95%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>JavaScript</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>React</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual Studio Code</span></li>
+            <li><span>Adobe Creative Suite Programs</span></li>
+            <li><span>Figma</span></li>
+            <li><span>Sketch app</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset__title">Etc</h3>
 
-      <img src="/images/IMG_9180.jpg" alt="Hyunji Kim standing in front of a Japanese temple" class="about-me__img">
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <h1>My work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn active">All <span class="category__count">6</span></button>
+        <button class="category__btn">Front-end <span class="category__count">3</span></button>
+        <button class="category__btn">Graphic Design <span class="category__count">3</span></button>
+      </div>
+      <div class="work__projects">
+        <a href="" class="project" target="blank">
+          <img src="imgs/projects/project1.png" alt="Youtube" class="project__img">
+          <div class="project__description">
+            <h3>Youtube Website</h3>
+            <span>Clone coding with HTML and CSS</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="section__container">
 
-  <!-- My Work -->
-  <section class="my-work" id="work">
-    <h2 class="section__title section__title--work">My work</h2>
-    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+      <h1>Tesimonials</h1>
+      <h3>See what they say about me</h3>
 
-    <div class="portfolio">
-      <!-- Portfolio item 01 -->
-      <a href="#" class="portfolio__item">
-        <img src="/images/projects/mywork-img-01.jpg" alt="first project" class="portfolio__img">
-        <button class="btn"></button>
-      </a>
+      <div class="owl-carousel owl-theme">
 
-      <!-- Portfolio item 02 -->
-      <a href="#" class="portfolio__item">
-        <img src="/images/projects/mywork-img-02.jpg" alt="second project" class="portfolio__img">
-      </a>
+        <div class="testimonials__box item">
+          <div class="testimonial__avatar"><img src="imgs/testimonials/Marie.jpg" alt="Person1"></div>
 
-      <!-- Portfolio item 03 -->
-      <a href="#" class="portfolio__item">
-        <img src="/images/projects/project2.png" alt="third project" class="portfolio__img">
-      </a>
+          <p>Hyunji has been providing graphic design including logo development, branding and Website graphics for both
+            Climate Change Leaders and Thomas Cole Inc. I recommend working with Hyunji as she is responsive, creative
+            and a valuable team player. We have enjoyed working with Hyunji.
+          </p>
+          <p class="testimonial__name"><a href="mailto:mcresswell@thomascoleinc.com">Marie Cresswell</a> / President
+            TCI, Co-founder, CCL</p>
 
+        </div>
+        <div class="testimonials__box item">
+          <div class="testimonial__avatar"><img src="imgs/testimonials/person2.jpg" alt="Person2"></div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis non voluptas minus tempora vero sit
+            amet vitae ipsum ratione, esse error similique soluta ad corrupti odit voluptatem unde. Quidem,
+            aspernatur.
+          </p>
+          <p class="testimonial__name"><a href="">John</a> / Mohawk College</p>
 
+        </div>
+      </div>
+    </div>
+    <!-- <button class="arrow left-arrow" id="left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="arrow right-arrow" id="right">
+        <i class="fas fa-chevron-right"></i>
+      </button> -->
 
     </div>
   </section>
-
-
-
-  <!-- My skills -->
-  <section class="my-skills" id="skills">
-    <h2 class="section__title section__title--skills">Skills</h2>
-    <ul class="skills">
-      <li class="skill">
-        <i class="fab fa-html5"></i>
-        <h3>HTML</h3>
-      </li> <!-- / skill -->
-      <li class="skill">
-        <i class="fab fa-css3-alt"></i>
-        <h3>CSS</h3>
-      </li> <!-- / skill -->
-      <li class="skill">
-        <i class="fab fa-js-square"></i>
-        <h3>JavaScript</h3>
-      </li> <!-- / skill -->
-      <li class="skill">
-        <i class="fab fa-wordpress-simple"></i>
-        <h3>WordPress</h3>
-      </li> <!-- / skill -->
-      <li class="skill">
-        <i class="fab fa-react"></i>
-        <h3>React</h3>
-      </li> <!-- / skill -->
-      <li class="skill">
-        <i class="fab fa-git-alt"></i>
-        <h3>Git</h3>
-      </li>
-    </ul> <!-- / skills -->
-
-    <a href="#work" class="btn">My Work</a>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">Let's talk</h1>
+    <h2 class="contact__email"><a href="mailto:creative.hkim@gmail.com">creative.hkim@gmail.com</h2>
+    </a>
+    <div class="contact__links">
+      <a href="https://github.com/creativehkim">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/creativehkim/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/creativehkim">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <p class="contact__rights">
+      © 2021 Hyunji Kim - All rights reserved
+    </p>
   </section>
 
-
-
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <a href="mailto:creative.hkim@gmail.com" class="footer-link">creative.hkim@gmail.com</a>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a href="https://github.com/creativehkim" class="social-list__link">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="https://www.linkedin.com/in/creativehkim/" class="social-list__link">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li class="social-list__item">
-        <a href="https://twitter.com/creativehkim" class="social-list__link"><i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    </ul>
-
-  </footer>
-  <div class="attribution">
-    Built and Designed by Hyunji Kim 2021
-  </div>
-  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+  <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      // autoplayHoverPause: true,
+      autoplaySpeed: 1500,
+      responsive: {
+        0: {
+          items: 1
+        }
+      }
+    })
+  </script>
+  <script src="main.js"></script>
 </body>
 
 </html>

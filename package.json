@@ -1,0 +1,23 @@
+{
+  "name": "hj_portfolio",
+  "version": "1.0.0",
+  "description": "Hyunji's Portfolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativehkim/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creativehkim/portfolio/issues"
+  },
+  "homepage": "https://github.com/creativehkim/portfolio#readme",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "owl.carousel": "^2.3.4"
+  }
+}
