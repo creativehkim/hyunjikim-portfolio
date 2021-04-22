@@ -273,33 +273,6 @@ p {
   font-size: var(--font-small);
 }
 
-/* .school {
-  display: flex;
-}
-
-.school__logo {
-  width: 150px;
-  margin-right: 20px;
-}
-
-.school__description {
-  margin: 0 16px;
-  text-align: left;
-}
-
-.school__name,
-.school__period {
-  color: var(--color-light-grey);
-}
-
-.school__name {
-  font-size: var(--font-small);
-}
-
-.school__period {
-  font-size: var(--font-micro);
-} */
-
 /* Skills */
 
 #skills {
@@ -554,7 +527,7 @@ p {
     display: none;
   }
 
-  .navbar__menu-container.open {
+  .navbar__menu.open {
     display: block;
   }
 

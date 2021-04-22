@@ -2,7 +2,7 @@
 
 const navbar = document.getElementById('navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
-const navbarMenu = document.querySelector('.navbar__menu-container');
+const navbarMenu = document.querySelector('.navbar__menu');
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 const homeContactBtn = document.querySelector('.home__contact');
@@ -37,8 +37,10 @@ navbarMenu.addEventListener('click', (e)=> {
 
 // Navbar toggle button for small screen
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-navbarToggleBtn.addEventListener('click', () => {
+navbarToggleBtn.addEventListener('click', (e) => {
+  e.stopImmediatePropagation();
   navbarMenu.classList.toggle('open');
+  console.log('working')
 })
 
 
@@ -77,10 +79,6 @@ homeArrow.addEventListener('click', (e) => {
 
   scrollIntoView(link);
 })
-
-
-
-
 
 
 function scrollIntoView(selector) {
