@@ -7,13 +7,21 @@
   <title>Hyunji Kim | Frone-end Developer</title>
   <meta name="description" content="Portfolio for a awesome front-end developer Hyunji">
   <meta name="author" content="Hyunji Kim">
-  <link rel="icon" type="image/ico" href="imgs/favicon-32x32.png">
+  <link rel="icon" type="image/ico" href="imgs/favicon.png">
+
+  <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
+
+  <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Box Icons -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
@@ -21,136 +29,101 @@
 <body>
 
   <!-- Navbar -->
-  <nav id="navbar" class="section">
+  <nav id="navbar">
     <div class="navbar__logo">
-      <img src="/imgs/logo.svg" alt="logo" class="logo">
+      <img src="/imgs/hj_logo.svg" alt="logo" class="logo">
     </div>
-
     <ul class="navbar__menu">
       <li class="navbar__menu__item" data-link="#home">Home</li>
       <li class="navbar__menu__item" data-link="#about">About</li>
       <li class="navbar__menu__item" data-link="#work">Work</li>
-
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      <button class="navbar__menu__item resume-btn">
+        <a href="#resume" class="nav__link">Resume</a>
+      </button>
     </ul>
-
     <!-- Toggle button -->
     <button class="navbar__toggle-btn">
       <i class="fas fa-bars"></i>
     </button>
+
   </nav>
 
   <!-- Home -->
-  <section id="home" class="section">
+  <section id="home">
     <div class="home__container">
-      <h1 class="home__title">Hello,<br /> I am Hyunji</h1>
-      <h2 class="home__description">The Front-end Developer you are looking for</h2>
-      <button class="home__contact" data-link="#contact">Contact Me</button>
+      <div class="home__text">
+        <h1 class="home__title">Hello,<br /> I am Hyunji</h1>
+        <h2 class="home__description">a seft-taught Front-end Developer & Designer</h2>
+        <button class="home__contact" data-link="#contact">Contact Me</button>
+
+      </div>
+      <div class="home__img">
+        <img src="/imgs/hero-img.svg" alt="Hero Image">
+      </div>
     </div>
     <button class="home__arrow" data-link="#home"><i class="fas fa-angle-up" data-link="#home"></i></button>
   </section>
 
   <!-- About -->
-  <section id="about" class="section section__container">
-    <h1>About me</h1>
-    <img src="imgs/profile.jpg" alt="Hyunji's profile photo" class="about__avatar">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in perferendis ab nesciunt quam. Numquam
-      officiis inventore dolores cupiditate facere ratione facilis obcaecati vitae veritatis, sunt, distinctio aut non
-      debitis!
-    </p>
-    <div class="about__majors">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-html5"></i>
-        </div>
-        <h2 class="major__title">Front-end</h2>
-        <div class="major__description">HTML, CSS, JavaScript</div>
+  <section id="about" class="section">
+
+    <div class="about__container">
+      <h1 class="about__title">Who I am</h1>
+      <img src="imgs/profile.png" alt="Hyunji's profile photo" class="about__avatar">
+      <h2 class="about__subtitle">Designer & Developer based in Toronto</h2>
+      <div class="about__body">
+        <p>Hi, I'm Hyunji.</p>
+        <p>I'm a designer and web developer based in Toronto. I create user-friendly and interactive web applications
+          with
+          aesthetically pleasing design.
+          As a highly motivated person who can adapt and learn quickly, I am always willing to challenge myself to be a
+          higher level professional.
+        </p>
       </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-figma"></i>
-        </div>
-        <h2 class="major__title">Web Design</h2>
-        <div class="major__description">Responsive Web Dsign using Figma, Sketch and XD</div>
-      </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-wordpress"></i>
-        </div>
-        <h2 class="major__title">WordPress</h2>
-        <div class="major__description">Designing and managing WordPress based website</div>
-      </div>
+
     </div>
 
   </section>
   <!-- Skills -->
   <section id="skills" class="section">
-    <div class="section__container"></div>
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis quae facere incidunt veniam quisquam
-      perspiciatis eveniet corrupti recusandae maxime ad eius, sint iure voluptatibus id tempora quam saepe. Itaque.
-    </p>
-    <div class="skillset">
-      <div class="skillset__left">
-        <h3 class="skillset__title">Skills</h3>
-        <div class="skill">
-          <div class="skill__description">
-            <span>HTML</span>
-            <span>95%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 95%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>CSS</span>
-            <span>90%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 90%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>JavaScript</span>
-            <span>90%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 90%;"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="skill__description">
-            <span>React</span>
-            <span>80%</span>
-          </div>
-          <div class="skill__bar">
-            <div class="skill__value" style="width: 80%;"></div>
-          </div>
-        </div>
-      </div>
-      <div class="skillset__right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio Code</span></li>
-            <li><span>Adobe Creative Suite Programs</span></li>
-            <li><span>Figma</span></li>
-            <li><span>Sketch app</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">Etc</h3>
+    <h1 class="section__title section__title--skills">Skills</h1>
+    <ul class="skills">
+      <li class="skill">
+        <i class="fab fa-html5"></i>
+        <h3>HTML</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-sass"></i>
+        <h3>Sass</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+      </li> <!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+      </li><!-- / skill -->
+      <li class="skill">
+        <i class="fab fa-figma"></i>
+        <h3>Figma</h3>
+      </li><!-- / skill -->
+      <li class="skill">
+        <img src="imgs/adobe-logo.svg" alt="adobe logo">
+        <h3>Adobe Creative Suite</h3>
+      </li>
 
-          <ul class="etc__list">
-            <li><span>Git</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </div>
+    </ul> <!-- / skills -->
+
   </section>
   <!-- Work -->
   <section id="work" class="section">
@@ -195,6 +168,8 @@
     </p>
   </section>
 
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 

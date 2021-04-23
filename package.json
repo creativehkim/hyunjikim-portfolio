@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/creativehkim/portfolio#readme",
   "dependencies": {
+    "boxicons": "^2.0.7",
     "browserify": "^17.0.0"
   }
 }

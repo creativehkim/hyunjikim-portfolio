@@ -1,12 +1,13 @@
 'use strict';
 
-const navbar = document.getElementById('navbar');
+const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 const navbarMenu = document.querySelector('.navbar__menu');
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 const homeContactBtn = document.querySelector('.home__contact');
 const homeArrow = document.querySelector('.home__arrow');
+
 
 // navbar scrolling effect
 
@@ -29,6 +30,7 @@ navbarMenu.addEventListener('click', (e)=> {
   if(link == null) {
     return;
   }
+  navbarMenu.parentElement.classList.remove('open');
   scrollIntoView(link);
   e.target.classList.add('active');
   active.classList.remove('active');
@@ -39,8 +41,8 @@ navbarMenu.addEventListener('click', (e)=> {
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', (e) => {
   e.stopImmediatePropagation();
-  navbarMenu.classList.toggle('open');
-  console.log('working')
+  navbarMenu.parentElement.classList.toggle('open');
+
 })
 
 

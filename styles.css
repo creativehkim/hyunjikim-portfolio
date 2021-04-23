@@ -1,0 +1,114 @@
+/* Google Fonts */
+
+/* CSS Variables */
+:root {
+  --header-height: 3rem;
+  --fw-medium: 500;
+}
+
+/* Colors */
+:root {
+  --clr-primary: #e98074;
+  --clr-white: #fafaff;
+  --clr-dark: #2a3b47;
+  --clr-text: #697477;
+}
+
+/* Typography */
+:root {
+  --ff-body: 'Poppins', sans-serif;
+  --fs-large: 6.25rem;
+  --fs-h2: 1.25rem;
+  --fs-regular: 0.938rem;
+  --fs-small: 0.813rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --fs-large: 10.5rem;
+    --fs-h2: 2rem;
+    --fs-regular: 1rem;
+    --fs-small: 0.875rem;
+  }
+}
+
+/* Margins */
+:root {
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+}
+
+/* z-index */
+:root {
+  --z-fixed: 100;
+}
+
+/* Base CSS */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-medium);
+  color: var(--clr-text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Class CSS */
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  position: relative;
+  font-size: var(--fs-h2);
+  color: var(--clr-dark);
+  margin: var(--mb-4) 0;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 32px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  top: 2rem;
+  margin: auto;
+  background-color: var(--clr-dark);
+}
