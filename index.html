@@ -21,6 +21,14 @@
   <!-- Box Icons -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
@@ -39,7 +47,7 @@
       <li class="navbar__menu__item" data-link="#work">Work</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
       <button class="navbar__menu__item resume-btn">
-        <a href="#resume" class="nav__link">Resume</a>
+        <a href="#resume" target="_blank" class="nav__link">Resume</a>
       </button>
     </ul>
     <!-- Toggle button -->
@@ -50,18 +58,21 @@
   </nav>
 
   <!-- Home -->
-  <section id="home">
+  <section id="home" class="section">
+    <div class="home__img">
+      <img src="/imgs/hero-img.svg" alt="Hero Image">
+    </div>
     <div class="home__container">
       <div class="home__text">
-        <h1 class="home__title">Hello,<br /> I am Hyunji</h1>
-        <h2 class="home__description">a seft-taught Front-end Developer & Designer</h2>
-        <button class="home__contact" data-link="#contact">Contact Me</button>
+        <h1 class="home__title">Hello,<br /> I am <span>Hyunji</span></h1>
+        <h2 class="home__description">a <span>seft-taught</span> front-end developer &
+          designer
+        </h2>
+        <button class="home__btn" data-link="#work">See my work</button>
+      </div>
 
-      </div>
-      <div class="home__img">
-        <img src="/imgs/hero-img.svg" alt="Hero Image">
-      </div>
     </div>
+
     <button class="home__arrow" data-link="#home"><i class="fas fa-angle-up" data-link="#home"></i></button>
   </section>
 
@@ -69,7 +80,7 @@
   <section id="about" class="section">
 
     <div class="about__container">
-      <h1 class="about__title">Who I am</h1>
+      <h1 class="about__title section__title">Who I am</h1>
       <img src="imgs/profile.png" alt="Hyunji's profile photo" class="about__avatar">
       <h2 class="about__subtitle">Designer & Developer based in Toronto</h2>
       <div class="about__body">
@@ -81,13 +92,15 @@
           higher level professional.
         </p>
       </div>
-
+      <button class="resume-btn">
+        <a href="#resume" target="_blank" class="resume__link">Resume</a>
+      </button>
     </div>
 
   </section>
   <!-- Skills -->
   <section id="skills" class="section">
-    <h1 class="section__title section__title--skills">Skills</h1>
+    <h1 class="skills__title section__title">Skills</h1>
     <ul class="skills">
       <li class="skill">
         <i class="fab fa-html5"></i>
@@ -118,7 +131,31 @@
         <h3>Figma</h3>
       </li><!-- / skill -->
       <li class="skill">
-        <img src="imgs/adobe-logo.svg" alt="adobe logo">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg class="adobe-icon" version="1.1" id="adobe" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 109.83 80"
+          style="enable-background:new 0 0 109.83 80;" xml:space="preserve">
+          <path class="st0" d="M0.04,47.52c-0.62-12.56,6.43-23.74,13.78-29.25c8.04-6.01,17.1-7.94,26.97-6.25c0.19,0.03,0.46-0.07,0.61-0.2
+          c1.62-1.37,3.16-2.85,4.86-4.12c5.86-4.36,12.49-6.83,19.75-7.53c3.05-0.29,6.1-0.21,9.15,0.19c3.46,0.46,6.8,1.35,10.01,2.69
+          c6.08,2.55,11.25,6.36,15.45,11.44c5.06,6.11,8.03,13.12,8.95,20.98c0.38,3.21,0.33,6.41-0.08,9.62c-0.63,5.04-2.15,9.79-4.64,14.21
+          c-4.91,8.73-12.08,14.87-21.5,18.34c-3.88,1.43-7.9,2.28-12.03,2.3C59.15,80.02,46.97,79.98,34.78,80c-2.43,0-4.85-0.15-7.22-0.66
+          c-10.16-2.2-17.88-7.81-23.1-16.8C2.29,58.8,0.39,54.64,0.04,47.52z M48.82,14.49c0.03,0.07,0.06,0.13,0.08,0.2
+          c2.44,1.14,4.71,2.55,6.84,4.19c0.14,0.11,0.52,0.03,0.71-0.09c5.04-3.12,10.51-4.33,16.4-3.64c5.3,0.62,9.95,2.71,13.82,6.34
+          c6.77,6.34,9.38,14.21,7.7,23.28c-1.51,8.15-6.26,14.07-13.67,17.77c-4.8,2.4-9.91,3.01-15.19,2.13c-4.02-0.67-7.71-2.21-10.88-4.79
+          c-1.92-1.56-3.68-3.33-5.44-5.08c-4.17-4.12-8.3-8.29-12.46-12.43c-1.74-1.74-4.2-1.77-5.84-0.11c-1.59,1.62-1.49,4.1,0.22,5.81
+          c5.21,5.2,10.37,10.44,15.62,15.59c5.24,5.15,11.56,8.15,18.83,9.13c3.49,0.47,6.97,0.35,10.43-0.33
+          c8.22-1.6,14.88-5.76,20.02-12.33c3.86-4.93,6.02-10.56,6.69-16.78c0.32-3.03,0.23-6.03-0.3-9.01c-1.2-6.8-4.19-12.71-9.09-17.58
+          C85.62,9.14,76.32,5.99,65.57,7.22c-4.2,0.48-8.15,1.85-11.79,4.02C52.08,12.25,50.47,13.41,48.82,14.49z M44.28,70.83
+          c-0.36-0.32-0.68-0.55-0.95-0.84c-1.68-1.79-3.35-3.6-5.04-5.39c-0.15-0.16-0.42-0.33-0.61-0.31c-2.06,0.31-4.11,0.35-6.17,0.05
+          c-3.7-0.54-7.05-1.92-9.82-4.46c-4.96-4.55-7.1-10.22-6.14-16.89c0.94-6.52,4.43-11.34,10.37-14.24c3.58-1.75,7.4-2.25,11.36-1.66
+          c3.85,0.58,7.26,2.1,10.11,4.78c1.46,1.38,2.86,2.82,4.28,4.24c2.28,2.28,4.55,4.56,6.84,6.83c0.94,0.93,2.08,1.39,3.41,1.17
+          c1.6-0.27,2.73-1.17,3.22-2.74c0.5-1.6,0.11-3.01-1.09-4.2c-3.05-3.05-6.08-6.13-9.17-9.14c-1.49-1.45-2.99-2.93-4.66-4.16
+          c-4.94-3.64-10.53-5.32-16.68-5.15c-5.39,0.15-10.31,1.73-14.69,4.86c-6.61,4.71-10.42,11.14-11.4,19.2
+          c-0.35,2.88-0.21,5.76,0.46,8.58c2.3,9.75,8.2,16.37,17.56,19.87c3.7,1.38,7.56,1.74,11.5,1.35C39.46,72.35,41.86,71.79,44.28,70.83 
+          z" fill="#93a0a3" />
+        </svg>
+
         <h3>Adobe Creative Suite</h3>
       </li>
 
@@ -130,7 +167,7 @@
   <!-- Work -->
 
   <section id="work" class="section work">
-    <h1 class="work__title">My work</h1>
+    <h1 class="work__title section__title">My work</h1>
     <div class="work__container bd-grid">
       <div class="work__img">
         <img src="/imgs/projects/project1.png" alt="Project 1 Image">
@@ -187,7 +224,7 @@
   <section id="contact" class="section">
     <!-- <h1 class="contact__title">Let's connect</h1> -->
     <div class="contact__body">
-      <h1 class="contact__title">Interested in working together? <br />We should chat.</h1>
+      <h1 class="contact__title">Interested in working together?</h1>
       <p class="contact__email">Reach me by filling out this form or just simply send an email to <br /><a
           href="mailto:creative.hkim@gmail.com">creative.hkim@gmail.com</a></p>
 
@@ -222,10 +259,7 @@
       © 2021 Hyunji Kim - All rights reserved
     </p>
   </section>
-  <!-- Scroll Reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 
   <script type="module" src="main.js"></script>
 </body>

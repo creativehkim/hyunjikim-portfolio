@@ -1,13 +1,5 @@
 'use strict';
 
-const navbar = document.querySelector('#navbar');
-const navbarHeight = navbar.getBoundingClientRect().height;
-const navbarMenu = document.querySelector('.navbar__menu');
-const home = document.querySelector('.home__container');
-const homeHeight = home.getBoundingClientRect().height;
-const homeContactBtn = document.querySelector('.home__contact');
-const homeArrow = document.querySelector('.home__arrow');
-
 
 // navbar scrolling effect
 
@@ -21,6 +13,10 @@ document.addEventListener('scroll', () => {
 });
 
 // Handle scrolling when clicking on the navbar menu
+
+const navbar = document.querySelector('#navbar');
+const navbarHeight = navbar.getBoundingClientRect().height;
+const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (e)=> {
   
@@ -46,10 +42,15 @@ navbarToggleBtn.addEventListener('click', (e) => {
 })
 
 
+
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+const homeWorkBtn = document.querySelector('.home__btn');
+const homeArrow = document.querySelector('.home__arrow');
 // Handle scrolling when clicking on the contact button
 
-homeContactBtn.addEventListener('click', () => {
-  scrollIntoView('#contact');  
+homeWorkBtn.addEventListener('click', () => {
+  scrollIntoView('#work');  
 })
 
 
@@ -87,3 +88,40 @@ function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({block: "start", behavior: "smooth"});
 }
+
+
+
+
+
+
+// Scroll Reveal Animation
+
+const sr = ScrollReveal({
+  origin: 'bottom',
+  // distance: '80px',
+  duration: 2000,
+  reset: true
+})
+
+// Scroll Home
+
+
+
+// sr.reveal('.home__text', {});
+// sr.reveal('.home__contact', {delay: 200});
+// sr.reveal('.home__img', {origin: 'bottom', delay: 400});
+
+
+
+// // Scroll About
+
+// sr.reveal('.about__avatar', {delay: 500});
+// sr.reveal('.about__subtitle', {delay: 200});
+// sr.reveal('.about__body', {origin: 'right', delay: 400});
+
+// Scroll Skills
+
+// Scroll Work
+
+// Scroll contact
+
