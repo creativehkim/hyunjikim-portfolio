@@ -821,3 +821,9 @@ p {
     padding-bottom: 2em;
   }
 }
+
+@media screen and (max-width: 768px) {
+  #contact h1 {
+    line-height: 1.2;
+  }
+}
