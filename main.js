@@ -91,9 +91,6 @@ function scrollIntoView(selector) {
 
 
 
-
-
-
 // Scroll Reveal Animation
 
 const sr = ScrollReveal({
@@ -125,3 +122,15 @@ const sr = ScrollReveal({
 
 // Scroll contact
 
+
+
+// Form submission alert
+
+const formSubmitBtn = document.querySelector('.contact__form-btn');
+
+formSubmitBtn.addEventListener('submit', submitHandler)
+
+function submitHandler () {
+  alert(`Your message has been sent. 
+Thank you!`)
+}

@@ -86,10 +86,9 @@
       <div class="about__body">
         <p>Hi, I'm Hyunji.</p>
         <p>I'm a designer and web developer based in Toronto. I create user-friendly and interactive web applications
-          with
-          aesthetically pleasing design.
-          As a highly motivated person who can adapt and learn quickly, I am always willing to challenge myself to be a
-          higher level professional.
+          with aesthetically pleasing design.
+        <p>As a highly motivated person who can adapt and learn quickly, I am always willing to challenge myself to be a
+          higher level professional.</p>
         </p>
       </div>
       <button class="resume-btn">
@@ -132,7 +131,7 @@
       </li><!-- / skill -->
       <li class="skill">
         <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
         <svg class="adobe-icon" version="1.1" id="adobe" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 109.83 80"
           style="enable-background:new 0 0 109.83 80;" xml:space="preserve">
@@ -179,7 +178,7 @@
           </div>
           <div class="work__link-btns">
             <button class="work__link-btn github-btn"><a href="https://github.com/creativehkim/to-do-app"
-                class="work__link-name">GitHub</a></button>
+                target="_blank" class="work__link-name">GitHub</a></button>
             <button class="work__link-btn viewsite-btn"><a href="https://to-do-app-creativehkim.vercel.app/"
                 target="_blank" class="work__link-name">Visit site</a></button>
           </div>
@@ -187,16 +186,18 @@
 
       </div>
       <div class="work__img">
-        <img src="/imgs/projects/project.png" alt="Project 2 Image">
+        <img src="/imgs/projects/project-2.jpg" alt="Project 2 Image">
 
         <div class="work__link">
           <div class="work__link-text">
-            <p class="work__link-title">Project 1</p>
-            <p class="work__link-desc">HTML, CSS, JS</p>
+            <p class="work__link-title">NASA APOD Board</p>
+            <p class="work__link-desc">NASA APOD(Astronomy Picture of the Day) App using HTML, CSS, JS</p>
           </div>
           <div class="work__link-btns">
-            <button class="work__link-btn github-btn"><a href="#" class="work__link-name">GitHub</a></button>
-            <button class="work__link-btn viewsite-btn"><a href="#" class="work__link-name">Visit site</a></button>
+            <button class="work__link-btn github-btn"><a href="https://github.com/creativehkim/nasa-apod-project"
+                target="_blank" class="work__link-name">GitHub</a></button>
+            <button class="work__link-btn viewsite-btn"><a href="https://nasa-apod-project-creativehkim.vercel.app/"
+                target="_blank" class="work__link-name">Visit site</a></button>
           </div>
         </div>
 
@@ -210,8 +211,10 @@
             <p class="work__link-desc">HTML, CSS, JS</p>
           </div>
           <div class="work__link-btns">
-            <button class="work__link-btn github-btn"><a href="#" class="work__link-name">GitHub</a></button>
-            <button class="work__link-btn viewsite-btn"><a href="#" class="work__link-name">Visit site</a></button>
+            <button class="work__link-btn github-btn"><a href="#" target="_blank"
+                class="work__link-name">GitHub</a></button>
+            <button class="work__link-btn viewsite-btn"><a href="#" target="_blank" class="work__link-name">Visit
+                site</a></button>
           </div>
         </div>
 
@@ -232,15 +235,23 @@
 
     </div>
 
-    <form action="" id="contact__form">
-      <label for="name">What is your name?</label>
-      <input type="text" class="input-field" name="name">
+    <form action="https://formsubmit.co/creative.hkim@gmail.com" method="POST" id="contact__form">
+      <div class="input-container">
+        <label for="name">What is your name?</label>
+        <input type="text" class="input-field" name="name" placeholder="your name" required>
+      </div>
 
-      <label for="email">Your email address</label>
-      <input type="text" class="input-field" name="email">
+      <input type="hidden" name="_subject" value="You've got email!">
+      <div class="input-container">
+        <label for="email">Your email address</label>
+        <input type="email" class="input-field" name="email" placeholder="your@email.com" required>
+      </div>
 
-      <label>Type your message here</label>
-      <textarea class="input-field" name="message"></textarea>
+      <div class="input-container">
+        <label>Type your message here</label>
+        <textarea class="input-field" name="message" placeholder="write your message here" required></textarea>
+      </div>
+      <input type="submit" value="Send" class="contact__form-btn"></input>
     </form>
 
 
