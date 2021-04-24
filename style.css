@@ -691,19 +691,14 @@ p {
 
 .contact__title {
   color: var(--clr-secondary);
+  margin-bottom: var(--mb-4);
 }
 .contact__email,
 .contact__rights {
   color: var(--clr-white);
 }
 
-.contact__title {
-  margin-top: 0;
-  margin-bottom: 2rem;
-}
-
 .contact__email {
-  line-height: 1.8;
   width: 90%;
 }
 
@@ -716,6 +711,23 @@ p {
   background-color: var(--clr-primary-dark);
   padding: 0.1em 0.5em;
   border-radius: 50px;
+}
+
+.contact__links {
+  font-size: var(--fs-medium);
+}
+
+.contact__links i {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin: 2rem 0.5rem 2rem 0;
+  padding: 0.5em;
+  transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-white);
 }
 
 #contact__form {
@@ -770,33 +782,14 @@ p {
 
 #footer {
   background-color: var(--clr-dark);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.footer__links {
-  font-size: var(--fs-medium);
-}
-
-.footer__links i {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  margin: 2rem 0.5rem 2rem 0;
-  padding: 0.5em;
-  transition: all var(--animation-duration) ease-in;
-}
-
-.footer__links i:hover {
-  transform: scale(1.1);
-  color: var(--color-white);
+  text-align: center;
+  padding: var(--mb-3);
 }
 
 .footer__rights {
   font-size: var(--fs-micro);
   color: var(--clr-text);
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
@@ -809,7 +802,6 @@ p {
 
   .contact__email {
     margin: auto;
-    margin-bottom: var(--mb-4);
   }
 
   #contact__form {
