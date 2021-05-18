@@ -663,14 +663,14 @@ p {
 
 @media screen and (max-width: 768px) {
   .work__link-title {
-    font-size: var(--fs-regular);
+    font-size: 24px;
     margin-bottom: var(--mb-1);
   }
   .work__link-title::after {
     display: none;
   }
   .work__link-desc {
-    font-size: var(--fs-small);
+    font-size: var(--fs-regular);
   }
   .work__link-btn {
     margin: var(--mb-1) 0.25rem;
