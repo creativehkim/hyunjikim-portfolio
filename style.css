@@ -611,7 +611,8 @@ p {
 
 .work__link-title {
   position: relative;
-  font-size: var(--fs-medium);
+  font-size: 24px;
+
   font-weight: var(--fw-bold);
   margin-bottom: var(--mb-3);
 }
