@@ -298,7 +298,7 @@ p {
 }
 
 #home .home__arrow {
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-primary);
   color: var(--clr-white);
   font-size: 40px;
   position: fixed;
@@ -663,14 +663,16 @@ p {
 
 @media screen and (max-width: 768px) {
   .work__link-title {
-    font-size: 24px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
     margin-bottom: var(--mb-1);
   }
   .work__link-title::after {
     display: none;
   }
   .work__link-desc {
-    font-size: var(--fs-regular);
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
   .work__link-btn {
     margin: var(--mb-1) 0.25rem;
@@ -681,7 +683,7 @@ p {
 /* Contact */
 
 #contact {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-primary-dark);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -701,6 +703,8 @@ p {
 
 .contact__email {
   width: 90%;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .contact__email a {
@@ -749,7 +753,7 @@ p {
   color: var(--clr-text);
   opacity: 0.6;
   font-family: var(--ff-body);
-  font-size: var(--fs-small);
+  font-size: var(--fs-regular);
 }
 
 #contact__form .contact__form-btn {
@@ -781,6 +785,7 @@ p {
   margin-bottom: 1rem;
 }
 
+
 #footer {
   background-color: var(--clr-dark);
   text-align: center;
@@ -811,7 +816,7 @@ p {
   }
 
   #contact__form label {
-    font-size: var(--fs-small);
+    font-size: var(--fs-regular);
   }
 
   .input-field {
