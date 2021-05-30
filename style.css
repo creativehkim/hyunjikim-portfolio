@@ -511,6 +511,7 @@ p {
   max-width: 500px;
   margin: 0.5rem auto;
   color: var(--clr-text);
+  width: 200px;
 }
 
 .skill .adobe-icon {
