@@ -418,7 +418,7 @@ p {
   grid-template-areas:
     'title title'
     'img subtitle'
-    'img text ';
+    'img text';
   grid-column-gap: 2em;
 }
 
@@ -447,20 +447,22 @@ p {
 }
 
 .about__avatar {
-  max-width: 450px;
+  max-width: 350px;
   border-radius: 10px;
   grid-area: img;
   position: relative;
+  align-self: center;
+  justify-self: center;
   z-index: 2;
 }
 
-.about__container.resume-btn {
+.about__body.resume-btn {
   font-family: var(--ff-body);
   border: 2px solid var(--clr-primary-dark);
   padding: 0.5em 1em;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
-  cursor: pointer;
+  grid-area: text;
 }
 
 @media screen and (max-width: 1000px) {
