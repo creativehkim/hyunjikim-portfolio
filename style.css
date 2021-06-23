@@ -380,8 +380,8 @@ p {
     font-size: 30px;
     height:50px;
     width: 50px;
-  
     right: 7%;
+    -webkit-appearance: none;
   }
 
   .home__container {
