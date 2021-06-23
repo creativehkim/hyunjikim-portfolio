@@ -322,6 +322,7 @@ p {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
   text-align: left;
   position: relative;
@@ -372,8 +373,11 @@ p {
 @media screen and (max-width: 1000px) {
   #home .home__arrow {
     font-size: var(--fs-medium);
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
+    right: 7%;
+    font-size: 30px;
+    -webkit-appearance: none;
   }
 
   .home__container {
@@ -484,6 +488,10 @@ p {
 @media screen and (max-width: 375px) {
   .about__avatar {
     margin: 1rem auto 0;
+  }
+  .about__body p {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 
