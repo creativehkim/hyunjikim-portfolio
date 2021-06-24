@@ -161,10 +161,12 @@ p {
   background-color: var(--clr-primary);
   padding: 8px 100px;
   box-shadow: var(--bs);
+
 }
 
 .navbar__menu {
   display: flex;
+  transition: all var(--animation-duration) ease;
 }
 
 .navbar__logo {
@@ -220,7 +222,7 @@ p {
   background-color: transparent;
   padding: 0.5em 1em;
   border: 2px solid var(--clr-primary-dark);
-  transition: all var(--animation-duration) ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -260,10 +262,11 @@ p {
 
   #navbar.open {
     background-color: var(--clr-primary);
+    transition: all var(--animation-duration) ease;
   }
   #navbar.open .navbar__menu {
     display: block;
-    
+    transition: all var(--animation-duration) ease;
   }
 
   .navbar__toggle-btn {
@@ -355,10 +358,11 @@ p {
   border-radius: 50px;
   border: 2px solid var(--clr-primary-dark);
   transition: all var(--animation-duration) ease;
+  background-color: var(--clr-primary-dark);
 }
 
-.home__btn:hover {
-  background-color: var(--clr-primary-dark);
+.home__btn:active {
+  transform: scale(0.98);
 }
 
 .home__img {
