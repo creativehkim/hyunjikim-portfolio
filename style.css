@@ -358,7 +358,7 @@ p {
   border-radius: 50px;
   border: 2px solid var(--clr-primary-dark);
   transition: all var(--animation-duration) ease;
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-primary-dark) !important;
 }
 
 .home__btn:active {
