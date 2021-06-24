@@ -291,7 +291,7 @@ p {
   .navbar__menu__item::after {
     width: 10%;
   }
-
+}
 
 
 /* Home */
@@ -500,6 +500,10 @@ p {
   .about__avatar {
     margin: 1rem auto 0;
   }
+  .about__body p {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 
 /* Skills */
@@ -517,7 +521,7 @@ p {
 
 .skills {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -850,5 +854,4 @@ p {
 @media screen and (max-width: 768px) {
   #contact h1 {
     line-height: 1.2;
-  }
-}
+  }}
