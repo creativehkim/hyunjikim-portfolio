@@ -247,6 +247,7 @@ p {
   font-size: 24px;
   color: var(--clr-white);
   display: none;
+  background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -470,14 +471,30 @@ p {
   z-index: 2;
 }
 
-.about__body.resume-btn {
+.about__body .resume-btn {
   font-family: var(--ff-body);
   border: 2px solid var(--clr-primary-dark);
-  padding: 0.5em 1em;
+  padding: 1em 1.5em;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
   grid-area: text;
+  border-radius: var(--mb-4);
 }
+
+.about__body .resume-btn:hover {
+  background-color: var(--clr-primary-dark);
+  color: #fff;
+}
+
+.about__body .resume-btn .resume__link {
+  color: var(--clr-dark);
+  font-weight: var(--fw-semi-bold);
+  transition: all 0.2s ease-in-out;
+}
+.about__body .resume-btn .resume__link:hover {
+  color: var(--clr-white);
+}
+
 
 @media screen and (max-width: 1000px) {
   .about__container {
