@@ -473,7 +473,7 @@ p {
 
 .about__body .resume-btn {
   font-family: var(--ff-body);
-  border: 2px solid var(--clr-primary-dark);
+  border: 2px solid var(--clr-primary);
   padding: 1em 1.5em;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
@@ -481,14 +481,13 @@ p {
   border-radius: var(--mb-4);
 }
 
-.about__body .resume-btn:hover {
-  background-color: var(--clr-primary-dark);
+.about__body .resume-btn:hover  {
+  background-color: var(--clr-primary);
   color: #fff;
 }
 
 .about__body .resume-btn .resume__link {
   color: var(--clr-dark);
-  font-weight: var(--fw-semi-bold);
   transition: all 0.2s ease-in-out;
 }
 .about__body .resume-btn .resume__link:hover {
